@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Validaction form</title>
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+<body>
+	<main>
+		<form action="" class="form" id="form">
+
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">User</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="User">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error"> The field user has to be between 4 and 16 characters long.</p>
+			</div>
+
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Name</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Name">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error"> The field name has to be between 2 and 40 characters long and can only contain letters.</p>
+			</div>
+
+
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Password</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">The password has to between 4 and 12 characters long.</p> 
+			</div>
+
+		
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repeat password </label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">The passwords don't match.</p>
+			</div>
+
+			
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Email</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Email">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">The email field must be a valid email.</p>
+			</div>
+
+		
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Phone</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Phone number">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">The telephone field must contain only numbers and be between 7 and 14 digits long. </p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"> I accept terms and conditions
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Please fill the form and/or accept terms.</p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Submit</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Form successfully send!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
